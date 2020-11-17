@@ -1,0 +1,21 @@
+{
+  "name": "negozio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sass/style.scss",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bulma-carousel": "^4.0.4"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.0",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/style.scss css/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "davide anfossi",
+  "license": "MIT"
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Negozio</title>
+
+    <link rel="stylesheet" href="node_modules/bulma-carousel/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/script.js"></script>
+    <script src="node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+
+    <!-- https://favicon.io/favicon-converter/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar is-danger">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item"><img src="images/logo/logo-white-v2.png" alt="Nome Negozio"></a>
+                <button class="button navbar-burger is-danger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="galleria.html" class="navbar-item">Galleria</a>
+                    <a href="servizi.html" class="navbar-item">Servizi</a>
+                    <a href="chisiamo.html" class="navbar-item">Chi siamo</a>
+                    <a href="contatti.html" class="navbar-item">Contatti</a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="#0" class="navbar-link">IT</a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a href="#" class="navbar-item">EN</a>
+                            <a href="#" class="navbar-item">CH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FIRST SECTION -->
+    <section class="hero is-light firstPadding">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-desktop is-variable is-8">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="images/1000x500.png" alt="Placeholder 1000x500">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-1 has-text-black pb-3">Nome Del Negozio</h1>
+                        <p class="subtitle pb-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                            pariatur.</p>
+                        <a href="tel:+3901234567">
+                            <button class="button is-danger">Chiama ora</button>
+                        </a>
+                        <button class="button is-danger is-outlined" onclick="window.location='contatti.html'">Dove Siamo</button>         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALS -->
+    <div class="modal" id="modal-carousel">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image">
+                <img src="" alt="">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+        
+    <!-- CAROUSEL -->
+    <!-- https://creativebulma.net/product/carousel/demo -->
+    <section class="section secondPadding">
+        <div class="container">
+            <a class="pb-5" href="galleria.html" style="display: inline-flex;">
+                <h2 class="title" style="padding-right: 0.25rem;">Galleria</h2>
+                <i class="fas fa-fw fa-chevron-right fa-2x" style="margin-top: 6px; color: #363636;"></i>
+            </a>
+
+            
+            <div id="carousel-home" class="carousel">
+                <div class="item-1">               
+                    <img class="is-clickable" src="images/sample/1.jpg" alt="1">
+                </div>
+                <div class="item-2">
+                    <img class="is-clickable" src="images/sample/2.jpg" alt="2">
+                </div>
+                <div class="item-3">
+                    <img class="is-clickable" src="images/sample/3.jpg" alt="3">
+                </div>
+                <div class="item-4">
+                    <img class="is-clickable" src="images/sample/4.jpg" alt="4">
+                </div>
+                <div class="item-5">
+                    <img class="is-clickable" src="images/sample/5.jpg" alt="5">
+                </div>
+                <div class="item-6">
+                    <img class="is-clickable" src="images/sample/6.jpg" alt="6">
+                </div>
+                <div class="item-7">
+                    <img class="is-clickable" src="images/sample/7.jpg" alt="7">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECOND SECTION V2 -->
+    <section class="section thirdPadding">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-10-widescreen">
+
+                    <div class="columns pb-5">
+                        <div class="column is-one-third">
+                            <figure class="image">
+                                <img src="images/800x800.png" alt="800x800">
+                            </figure>
+                        </div>
+                        <div class="column content"> 
+                            <h2 class="title">Il nostro Negozio</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur.</p>
+                            <button class="button is-danger is-outlined" id="buttonNegozio">Scopri di più</button>
+                        </div>
+                    </div>
+                    
+                    <div class="columns reverse-columns pb-5 pt-5">
+                        <div class="column content has-text-right">
+                            <h2 class="title">I Servizi offerti</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur.</p>
+                            <button class="button is-danger" id="buttonServizi" onclick="window.location='servizi.html'">Scopri di più</button>
+                        </div>
+                        <div class="column is-one-third"> 
+                            <figure class="image">
+                                <img src="images/800x800.png" alt="800x800">
+                            </figure>
+                        </div> 
+                    </div>
+
+                    <div class="columns pt-5">
+                        <div class="column is-one-third">
+                            <figure class="image">
+                                <img src="images/800x800.png" alt="800x800">
+                            </figure>
+                        </div>
+                        <div class="column content"> 
+                            <h2 class="title">Il Nostro Team</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur.</p>
+                            <button class="button is-danger is-outlined" id="buttonCompetenze" onclick="window.location='chisiamo.html';">Scopri di più</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer has-text-white has-background-grey-darker">
+        <div class="container">
+            <div class="columns is-multiline is-mobile">
+                <div class="column is-one-quarter-widescreen is-half-mobile">
+                    <h6 class="title is-5 has-text-white">Link utili</h6>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="servizi.html">Servizi</a></li>
+                        <li><a href="chisiamo.html">Chi siamo</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="column is-one-quarter-widescreen is-half-mobile">
+                    <h6 class="title is-5 has-text-white">Informazioni</h6>
+                    <ul>
+                        <li><a href="index.html">Dmande frequenti</a></li>
+                        <li><a href="index.html">Offerte di lavoro</a></li>
+                        <li><a href="index.html">Informazioni Legali</a></li>
+                    </ul>
+                </div>
+                <div class="column is-one-quarter-widescreen is-half-mobile">
+                    <h6 class="title is-5 has-text-white">Social</h6>
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class="fab fa-fw fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com"><i class="fab fa-fw fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.twitter.com"><i class="fab fa-fw fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.youtube.com"><i class="fab fa-fw fa-youtube"></i> Youtube</a></li>
+                        <li><a href="https://www.linkedin.com"><i class="fab fa-fw fa-linkedin"></i> Linedin</a></li>
+                    </ul>
+                </div>
+                <div class="column is-one-quarter-widescreen is-half-mobile">
+                    <h6 class="title is-5  has-text-white">Dove trovarci</h6>
+                    <ul>
+                        <address>
+                            <strong class="has-text-white">Nome Negozio</strong><br>
+                            Nome della strada <br>
+                            Codice ZIP e città<br>
+                            <i class="fas fa-fw fa-phone"></i><a href="tel:+3901234567">+39 0123 4567</a><br>
+                            <i class="fas fa-fw fa-envelope"></i><a href="mailto:info@domain">info@domain.com</a>
+                        </address>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <p class="has-text-centered">&copy; 2020, Nome Negozio. All rights reserved</p>
+        </div>
+    </footer>    
+</body>
+</html>
